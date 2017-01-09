@@ -5,12 +5,16 @@
 
 #HSLIDE
 
-### The <span style="color: #e49436; text-transform: none">smallest</span> component.
-<br>
-<span style="color:gray; font-size:0.6em;">[ JUST LIKE THIS ONE ]</span>
+### Components
+
+#VSLIDE
+
+```
+{{my-component title='My Component'}}
+{{#my-component title='My Component'}}Contents that could be included with the rendered component.{{/my-component}}
+```
 
 #HSLIDE
-<!-- .slide: data-autoslide="2000" -->
 
 ### No more <span style="color: #666666">Keynote.</span>
 ### <span class="fragment" data-fragment-index="1" data-autoslide="2000">No more <span style="color: #666666">Powerpoint.</span>
