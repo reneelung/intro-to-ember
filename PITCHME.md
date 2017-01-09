@@ -7,12 +7,7 @@
 
 ### Components
 
-#VSLIDE
-
-```
-{{my-component title='My Component'}}
-{{#my-component title='My Component'}}Contents that could be included with the rendered component.{{/my-component}}
-```
+#VSLIDE?gist=dbe2f1c570f77ccad9cba34ad3095fa2
 
 #HSLIDE
 
