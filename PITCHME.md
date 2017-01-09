@@ -1,13 +1,7 @@
 #HSLIDE
 ![LOGO](http://emberjs.com/images/brand/ember_Ember-Dark.png)
 
-#### Get the word out
-<br>
-<span style="color:gray">Markdown Presentations For Developers</span>
-<br>
-<span style="color:gray">on</span>
-<br>
-<span style="color:gray">GitHub, GitLab and Bitbucket</span>
+#### Intro to Ember.js
 
 #HSLIDE
 
