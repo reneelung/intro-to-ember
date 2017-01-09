@@ -80,4 +80,4 @@ Components can be _way_ fancier than just simple pass-thru tubes. We can also ad
 
 #VSLIDE
 
-Adding code to components allows us to make use of Ember's `computed` properties, sometimes known as data binding
+Adding code to components allows us to make use of Ember's `computed` properties, also known as data binding
