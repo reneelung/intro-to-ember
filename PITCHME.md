@@ -20,7 +20,7 @@
 
 ###### Templates
 
-<span style="font-size: small">A component's template determines how it is rendered into its surrounding context...</span>
+A component's template determines how it is rendered into its surrounding context...
 
 ```
 <h1>{{title}}</h1>
@@ -28,78 +28,56 @@
 ```
 #VSLIDE
 
-<span style="font-size: small">And uses handlebars.js and the keyword `yield` to figure out how to handle data passed in.</span>
+And uses handlebars.js and the keyword `yield` to figure out how to handle data passed in.
 ```
 <h1>My Component</h1>
 <p>Some content!</p>
 ```
 
-#HSLIDE
-
-### No more <span style="color: #666666">Keynote.</span>
-### <span class="fragment" data-fragment-index="1" data-autoslide="2000">No more <span style="color: #666666">Powerpoint.</span>
-<br>
-### <span class="fragment" data-fragment-index="2" data-autoslide="3500">Just <span style="color: #e49436">Markdown</span>. Then <span style="color: #e49436">Git-Commit</span>.</li>
 
 #HSLIDE
 
-<span style="color: #e49436">STEP 1. PITCHME.md</span>
+### <span style="text-transform: none;">handlebars.js</span>
 
-![MARKDOWN](https://d1z75bzl1vljy2.cloudfront.net/hello-world/markdown.png)
+#VSLIDE
 
-Create GitPitch slideshow content using GitHub flavored Markdown in your favorite editor.
+handlebars.js is a templating system that links component data with the DOM
 
-#HSLIDE
+#VSLIDE
 
-<span style="color: #e49436">STEP 2. GIT-COMMIT</span>
+Let's revisit `my-component`
 
-![TERMINAL](https://d1z75bzl1vljy2.cloudfront.net/hello-world/terminal.png)
+```
+{{my-component title='Some Title' anotherPlaceHolder='Another arbitrary string'}}
+```
 
-Git-commit on any branch and push your PITCHME.md to GitHub, GitLab or Bitbucket.
+#VSLIDE
 
-#HSLIDE
+If the template for `my-component` references `title` or `anotherPlaceHolder`, handlebars.js allows us to pass this data through to the DOM like so:
 
-<span style="color: #e49436">STEP 3. GET THE WORD OUT!</span>
+```
+<h1>{{title}}<h1>
+<p>{{anotherPlaceHolder}}</p>
+```
 
-<br>
+```
+<h1>Some Title<h1>
+<p>Another arbitrary string</p>
+```
 
-<span style="font-size: 1.3em;"><span style="color:white">htt</span><span style="color:white">ps://git</span><span style="color: #e49436">pitch</span><span style="color: white">.com/<span style="color: #e49436">user</span>/<span style="color: #e49436">repo</span>/<span style="color: #e49436">branch</span></span>
+#VSLIDE
 
-<br>
+handlebars.js gives you simple tubes, but also lets you add some control to those tubes with control structures.
 
-Instantly use your GitPitch slideshow URL to promote, pitch or present absolutely anything.
-
-#HSLIDE
-<!-- .slide: data-autoslide="11000" -->
-
-<span style="color: #e49436">GIT</span>PITCH DESIGNED FOR SHARING
-
-![SOCIAL](https://d1z75bzl1vljy2.cloudfront.net/hello-world/gp-social.jpg)
-
-- View any slideshow at its public URL
-- Promote any slideshow using a GitHub badge
-- Embed any slideshow within a blog or website
-- Share any slideshow on Twitter, LinkedIn, etc
-- Print any slideshow as a PDF document
-- Download and present any slideshow offline
-
-#HSLIDE
-<!-- .slide: data-autoslide="12000" -->
-
-<span style="color: #e49436">GIT</span>PITCH FEATURE RICH SLIDESHOWS
-
-- GitHub Flavored Markdown +
-- Code Block and GIST Slides
-- Image and Video Slides
-- Custom Logos and Backgrounds
-- Multiple Themes And More
-- <span style="color: #e49436">Plus...</span>
-- Your Slideshow Is Part Of Your Project
-- Under Git Version Control Within Your Git Repo
+#VSLIDE?gist=0eb92e9f73dd373b68a00355cd890b83
 
 
 #HSLIDE
-<!-- .slide: data-autoslide="8000" -->
 
-### Go for it.
-### Just add <span style="color: #e49436; text-transform: none">PITCHME.md</span> ;)
+###### Adding code to components
+
+Components can be _way_ fancier than just simple pass-thru tubes. We can also add code to control the behaviour and logic of components.
+
+#VSLIDE
+
+Adding code to components allows us to make use of Ember's `computed` properties, sometimes known as data binding
