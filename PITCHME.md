@@ -20,19 +20,19 @@
 
 ###### Templates
 
-A component's template determines how it is rendered into its surrounding context.
+<span style="font-size: small">A component's template determines how it is rendered into its surrounding context...</span>
 
 ```
 <h1>{{title}}</h1>
 <p>{{yield}}</p>
 ```
+#VSLIDE
 
-<div class="fragment">
+<span style="font-size: small">And uses handlebars.js and the keyword `yield` to figure out how to handle data passed in.</span>
 ```
 <h1>My Component</h1>
 <p>I'm rendered as content!</p>
 ```
-</div>
 
 #HSLIDE
 
