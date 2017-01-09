@@ -10,12 +10,29 @@
 #VSLIDE
 
 ###### A couple of ember components
-<pre class="fragment" style="font-size=12px">
+
 ```
 {{my-component title='My Component'}}
-{{#my-component title='My Component'}}Contents that could be included with the rendered component.{{/my-component}}
+{{#my-component title='My Component'}}I'm rendered as content!{{/my-component}}
 ```
-</pre>
+
+#VSLIDE
+
+###### Templates
+
+A component's template determines how it is rendered into its surrounding context.
+
+```
+<h1>{{title}}</h1>
+<p>{{yield}}</p>
+```
+
+<div class="fragment">
+```
+<h1>My Component</h1>
+<p>I'm rendered as content!</p>
+```
+</div>
 
 #HSLIDE
 
