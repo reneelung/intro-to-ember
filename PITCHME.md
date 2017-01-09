@@ -13,7 +13,7 @@
 
 ```
 {{my-component title='My Component'}}
-{{#my-component title='My Component'}}I'm rendered as content!{{/my-component}}
+{{#my-component title='My Component'}}Some content!{{/my-component}}
 ```
 
 #VSLIDE
@@ -31,7 +31,7 @@
 <span style="font-size: small">And uses handlebars.js and the keyword `yield` to figure out how to handle data passed in.</span>
 ```
 <h1>My Component</h1>
-<p>I'm rendered as content!</p>
+<p>Some content!</p>
 ```
 
 #HSLIDE
